@@ -8,7 +8,12 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {
+  "devDependencies": {
     "astro": "^5.7.13"
+  },
+  "dependencies": {
+    "@fontsource/trirong": "^5.2.6",
+    "@tailwindcss/vite": "^4.1.7",
+    "tailwindcss": "^4.1.7"
   }
 }

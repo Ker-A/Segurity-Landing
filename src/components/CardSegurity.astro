@@ -1,0 +1,78 @@
+---
+const {title1, subtitle1, info1, sale1, img1 } = Astro.props;
+const {title2, subtitle2, info2, sale2, img2 } = Astro.props;
+const {title3, subtitle3, info3, sale3, img3 } = Astro.props;
+---
+
+
+   
+    <section>
+      <div>
+        <div class="text-center py-10 text-white">
+          <h2 class="text-6xl py-10">Seguridad para cada situación</h2>
+          <p class="text-xl">
+            Obtén protección especializada donde más la necesites
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-5 grid-rows-2 gap-4 items-center p-10 [&>div]:bg-white [&>div]:rounded-2xl [&>div]:p-5 [&>div]:text-black [&>div>div>h3]:text-3xl [&>div>div>p]:py-2 [&>div>div>p]:text-sm"
+        >
+        <!-- card 1 -->
+          <div class="col-start-2 col-span-1 row-start-0 row-span-3">
+            <div class="max-w-58 mx-auto">
+              <img src=`${img1}` alt="Conexión Wi-Fi segura" />
+            </div>
+            <div>
+              <p>{subtitle1}</p>
+              <h3>{title1}</h3>
+              <p>{info1}</p>
+              <p class="text-gray-600"><span class="text-2xl">{sale1}</span></p>
+              <a href="#" class="text-green-600">Más informacion</a>
+            </div>
+          </div>
+
+          <!--* Card 2 -->
+          <div class="col-start-3 col-span-2 row-span-1 flex">
+            <div>
+              <p class="text-gray-600">{subtitle2}</p>
+              <h3>{title2}</h3>
+              <p>
+                {info2}
+              </p>
+              <p class="text-gray-600">
+                <span class="text-2xl">{sale2}</span>
+              </p>
+              <a href="#" class="text-green-600">Más informacion</a>
+            </div>
+            <div class="max-w-50">
+              <img src=`${img2}` alt="Protección para niños" />
+            </div>
+          </div>
+
+          <!--* card 3 -->
+          <div class="col-start-3 col-span-2 row-span-1 flex">
+            <div>
+              <p>{subtitle3}</p>
+              <h3>{title3}</h3>
+              <p>
+                {info3}
+              </p>
+              <p class="text-gray-600">
+                <span class="text-2xl">{sale3}</span>
+              </p>
+              <a href="#" class="text-green-600">Más informacion</a>
+            </div>
+            <div class="max-w-50">
+              <img
+                src=`${img3}`
+                alt="Protección de contraseñas"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+

@@ -1,11 +1,33 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Head from '../components/Head.astro';
 import Layout from '../layouts/Layout.astro';
+import LandingHeader from '../components/LandingHeader.astro';
+import CardSegurity from '../components/CardSegurity.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<LandingHeader />
+	<Head />
+	<CardSegurity
+		title1="VPN Secure Connection"
+		subtitle1="Conexión Wi-Fi segura"
+		info1="Navega de forma segura y privada en las redes Wi-Fi públicas y domésticas."
+		sale1="Desde MXN 399.00/Año"
+		img1="/Wifi-seg.webp"
+	
+		title2="Safe Kids"
+		subtitle2="Protección para niños"
+		info2="Controles parentales y seguimiento por GPS para proteger a tus hijos."
+		sale2="Desde MXN 396.00/Año"
+		img2="/Hijo-seg.webp"
+
+		title3="Password Manager"
+		subtitle3="Protección de contraseñas"
+		info3="Una bóveda de seguridad con nivel de protección bancario para tus contraseñas y documentos confidenciales"
+		sale3="Desde MXN 359.00/Año"
+		img3="/Cont-seg.webp"
+	></CardSegurity>
 </Layout>
